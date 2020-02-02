@@ -19,7 +19,7 @@ const messageOne = document.querySelector('#message-1');
 const messageTwo = document.querySelector('#message-2');
 
 weatherForm.addEventListener('submit', (e) => {
-  messageTwo.textContent = '';
+  messageOne.textContent = '';
   messageTwo.textContent = 'Loading...';
   e.preventDefault()
   const location = search.value;

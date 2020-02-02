@@ -6,11 +6,12 @@
     <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
-    {{>header}}
     <div class="main-content">
-      <p>{{name}}</p>
+      {{>header}}
+      <p>This site was created by Vitalii Kulyk. It uses data from mapbox.com and darksky.net.</p>
       <img class="portrait" src="img/me.jpg">
+      {{>footer}}
     </div>
-    {{>footer}}
+
   </body>
 </html>
