@@ -17,10 +17,9 @@ const forecast = (lat, lon, callback) => {
       } else {
         const { temperature, precipProbability } = currently;
         const { summary, temperatureMin, temperatureMax } = daily.data[0];
-        const message = `${summary} It is currently ${temperature} desgees out.
+        const message = `${summary} It is currently ${temperature} degrees out.
                         \nThere is a ${precipProbability}% chance of rain.
-                        \nThe min temperature is ${temperatureMin}.
-                        \nThe max temperature is ${temperatureMax}.`;
+                        \nThe high today is ${temperatureMin} degrees with the low of ${temperatureMax}`;
         callback(undefined, message);
       }
     }
