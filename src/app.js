@@ -3,6 +3,7 @@ const express = require('express');
 const hbs = require('hbs');
 
 const app = express();
+const port = process.env.PORT || 3000;
 
 const geocode = require('./utils/geocode');
 const forecast = require('./utils/forecast');
@@ -82,6 +83,6 @@ app.get('*', (req, res) => {
   res.render('404', { title: '404', text: 'Content does not exist', name: 'Vitalii'});
 })
 
-app.listen(3000, () => {
+app.listen(port, () => {
   console.log('Server is up and running');
 });
